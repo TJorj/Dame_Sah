@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="dame_rebuild" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/dame_rebuild" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add library="../../../../../../../SFML-2.4.0/lib/libsfml-graphics-d.a" />
+					<Add library="../../../../../../../SFML-2.4.0/lib/libsfml-window-d.a" />
+					<Add library="../../../../../../../SFML-2.4.0/lib/libsfml-system-d.a" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/dame_rebuild" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+					<Add library="../../../../../../../SFML-2.4.0/lib/libsfml-graphics.a" />
+					<Add library="../../../../../../../SFML-2.4.0/lib/libsfml-window.a" />
+					<Add library="../../../../../../../SFML-2.4.0/lib/libsfml-system.a" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+			<Add directory="../../../../../../../SFML-2.4.0/include" />
+		</Compiler>
+		<Unit filename="include/c_spatiu.h" />
+		<Unit filename="include/coordonate.h" />
+		<Unit filename="include/dama_a.h" />
+		<Unit filename="include/dama_n.h" />
+		<Unit filename="include/globala.h" />
+		<Unit filename="include/myexceptions.h" />
+		<Unit filename="include/patrat.h" />
+		<Unit filename="include/piesa.h" />
+		<Unit filename="include/tabla.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/c_spatiu.cpp" />
+		<Unit filename="src/coordonate.cpp" />
+		<Unit filename="src/dama_a.cpp" />
+		<Unit filename="src/dama_n.cpp" />
+		<Unit filename="src/functii.cpp" />
+		<Unit filename="src/patrat.cpp" />
+		<Unit filename="src/piesa.cpp" />
+		<Unit filename="src/tabla.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
